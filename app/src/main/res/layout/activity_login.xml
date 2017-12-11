@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="com.lh.learninghelper.Actitivy.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/back_icon"
+        android:onClick="dofin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_loginicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:src="@mipmap/logo"
+        app:layout_constraintBottom_toTopOf="@+id/iv_login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/login"
+        app:layout_constraintBottom_toTopOf="@+id/centerview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:id="@+id/centerview"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/loginhead"
+        app:layout_constraintBottom_toBottomOf="@+id/et_name"
+        app:layout_constraintRight_toLeftOf="@id/iv_login" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:hint="姓名"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_login"
+        app:layout_constraintTop_toBottomOf="@id/iv_login" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="#2f4f4f"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"></View>
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/num"
+        app:layout_constraintBottom_toBottomOf="@+id/et_num"
+        app:layout_constraintRight_toLeftOf="@id/iv_login" />
+
+    <EditText
+        android:id="@+id/et_num"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        android:hint="学号"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="@id/iv_login"
+        app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="#2f4f4f"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_num"></View>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@mipmap/button"
+        android:onClick="dologin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_num" />
+
+
+</android.support.constraint.ConstraintLayout>

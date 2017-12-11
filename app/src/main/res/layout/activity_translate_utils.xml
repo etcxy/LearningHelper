@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+
+    tools:context="com.lh.learninghelper.Actitivy.TranslateActivity">
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入中文" />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="翻译结果" />
+
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please input English" />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_tip2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Translate Result" />
+
+</LinearLayout>

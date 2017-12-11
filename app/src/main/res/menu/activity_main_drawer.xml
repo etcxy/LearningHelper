@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cet4"
+            android:icon="@drawable/levelf"
+            android:title="四级" />
+        <item
+            android:id="@+id/nav_cet6"
+            android:icon="@drawable/levels"
+            android:title="六级" />
+        <item
+            android:id="@+id/nav_graduate"
+            android:icon="@drawable/graduate"
+            android:title="考研" />
+
+    </group>
+    <item android:title="实用小工具">
+        <menu>
+            <item
+                android:id="@+id/nav_utils"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="翻译助手" />
+
+        </menu>
+    </item>
+
+
+</menu>
